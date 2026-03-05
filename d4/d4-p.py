@@ -6,3 +6,5 @@ file_destination = "./d4/copy.txt"
 file_functions.write_content(file_destination, file_content)
 
 file_functions.delete_content(file_destination)
+
+file_functions.read_file_lines("./d4/story.txt")
