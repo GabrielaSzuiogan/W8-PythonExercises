@@ -1,32 +1,32 @@
-# #1
-# def is_even(numb):
-#     return numb%2==0 and True
+#1
+def is_even(numb):
+    return numb%2==0 and True
 
-# numb = int(input("Enter a number: "))
-# print(is_even(numb))
+numb = int(input("Enter a number: "))
+print(is_even(numb))
 
-# #2
-# def find_max(a, b):
-#     if a > b:
-#         return a
-#     else:
-#         return b
-# a = int(input("Enter number 1: "))
-# b = int(input("Enter number 2: "))
-# print(find_max(a,b))
+#2
+def find_max(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+a = int(input("Enter number 1: "))
+b = int(input("Enter number 2: "))
+print(find_max(a,b))
 
 
-# #3
-# def count_vowels(phrase):
-#     count = 0
-#     for c in phrase:
-#         if c.lower() in 'aeiou':
-#             count += 1
-#     return count
+#3
+def count_vowels(phrase):
+    count = 0
+    for c in phrase:
+        if c.lower() in 'aeiou':
+            count += 1
+    return count
 
-# phr = input("Write something: ")
-# nr= count_vowels(phr)
-# print(f"Phrase contains {nr} vowels")
+phr = input("Write something: ")
+nr= count_vowels(phr)
+print(f"Phrase contains {nr} vowels")
 
 #4
 def sum_nr(ls):
