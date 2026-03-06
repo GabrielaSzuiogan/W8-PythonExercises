@@ -1,12 +1,12 @@
 #reads from txt (p1 + p2)
-def read_file(file_name = str):
+def read_file(file_name : str):
     with open(file_name, "r") as file:
         content = file.read()
     file.close()
     return(content)
 
 #writes content in a file (p1)
-def write_content(file_name = str, file_content = str):
+def write_content(file_name : str, file_content : str):
     with open(file_name, "w") as file:
         file.write(file_content)
     file.close()
@@ -15,7 +15,7 @@ def write_content(file_name = str, file_content = str):
 
 
 #add: delete content
-def delete_content(file_name = str):
+def delete_content(file_name :str):
     with open(file_name, "w") as file:
         file.write("")
     file.close()
@@ -23,7 +23,7 @@ def delete_content(file_name = str):
 
 
 #read line by line (p2)
-def read_file_lines(file_name = str):
+def read_file_lines(file_name : str):
     word_list = []
     with open(file_name, "r") as file:
         for line in file:

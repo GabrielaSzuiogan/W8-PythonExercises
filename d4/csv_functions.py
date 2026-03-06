@@ -18,7 +18,7 @@ def init_db(file_name = str, file_header = str):
 
 
 #add_record
-def add_db(file_name = str, data = str):
+def add_db(file_name : str, data : str):
     next_id = upd_id(file_name)
     full_content = []
     for row in data:
@@ -33,7 +33,7 @@ def add_db(file_name = str, data = str):
 
 
 #search_record
-def search_db(file_name = str, search_item = str):
+def search_db(file_name : str, search_item : str):
     aux = False
     with open(file_name, "r") as file:
         reader = csv.reader(file)
@@ -45,7 +45,7 @@ def search_db(file_name = str, search_item = str):
         print("Item not found!")
 
 #delete_record
-def delete_db(file_name = str, delete_item = str):
+def delete_db(file_name : str, delete_item : str):
     file_content = []
     with open(file_name, "r") as file:
         reader = csv.reader(file)
@@ -65,7 +65,7 @@ def delete_db(file_name = str, delete_item = str):
 
 # ---- hw1
 #update_record
-def upd_db(file_name = str, select_record = str, new_record = list[str]):
+def upd_db(file_name : str, select_record : str, new_record : list[str]):
     file_content = []
     aux = False
     with open(file_name, "r") as file:
@@ -88,12 +88,13 @@ def upd_db(file_name = str, select_record = str, new_record = list[str]):
     
 
 #auto_incr
-def upd_id(file_name=str):
+def upd_id(file_name :str):
     with open(file_name, "r") as file:
         reader = list(csv.reader(file))
         if len(reader) <= 1:
             return 1
         last_id = int(reader[-1][0])
         return last_id + 1
+
 
 #schema
