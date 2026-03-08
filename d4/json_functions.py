@@ -7,7 +7,7 @@ def show_db(file_name: str):
         for row in data:
             print(row)
 
-#initialise
+#init
 def init_db(file_name: str):
     with open(file_name, "w") as file:
         json.dump([], file)
